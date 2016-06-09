@@ -1,0 +1,42 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Qentinel Challenge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- build:libCss styles/libs.css -->
+    <link rel="stylesheet" href="vendor/oi-select.css">
+    <!-- endbuild -->
+
+    <!-- build:appCss(.tmp) styles/app.css -->
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/spinner.css">
+    <!-- endbuild -->
+
+</head>
+<body ng-app="qentinelShoppingCart" ng-strict-di>
+    <!--[if lt IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div ng-view></div>
+
+    <!-- build:libJs scripts/libs.js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+     <!-- build:ngLibJs scripts/plugins.js -->
+    <script src="vendor/plugins.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:appJs(.tmp) scripts/app.js -->
+    <script src="scripts/app.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

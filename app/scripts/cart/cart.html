@@ -1,0 +1,28 @@
+<div ng-if="$ctrl.isEmpty()">
+  <div class="row">
+    <div class="order empty-cart-image col-md-12">
+      <img src="images/cart.svg">
+    </div>
+  </div>
+  <div class="row">
+    <div class="order empty-cart-text col-md-12">
+      Your cart is empty
+    </div>
+  </div>
+</div>
+
+<div ng-if="!$ctrl.isEmpty()">
+  <div class="row" ng-repeat="item in $ctrl.items track by item.id">
+    <item data="item"></item>
+  </div>
+</div>
+
+<div class"row">
+  <div class="col-md-12">
+    <div class="place-order"
+         ng-class="{disabled: $ctrl.isEmpty()}"
+         ng-click="$ctrl.placeOrder()">
+      Place order
+    </div>
+  </div>
+</div>

@@ -26,9 +26,6 @@ var notify      = require('gulp-notify');
 var babelify    = require('babelify');
 var runSequence = require('run-sequence');
 var del         = require('del');
-var ngConstant  = require('gulp-ng-constant');
-var apiProxy    = require('./dev/api_proxy_middleware');
-var apiConf     = require('./api.conf.json');
 var watchify    = require('watchify');
 
 function makeBrowserifyBundler(entrypoint, destDir, destFile, watch, coverage) {
@@ -218,7 +215,7 @@ gulp.task('watch', function() {
 gulp.task('connect', function() {
   connect.server({
     root: ['.tmp', 'app'],
-    port: 8888,
+    port: 9999,
     livereload: true
   });
 });

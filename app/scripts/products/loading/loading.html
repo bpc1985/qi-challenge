@@ -1,0 +1,21 @@
+<div>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="loading-button" ng-click="$ctrl.loadData()">
+        Load latest products
+      </div>
+    </div>
+  </div>
+
+  <div class="row" ng-if="$ctrl.showLoading">
+    <div class="col-md-6 col-md-offset-5">
+      <img class="loading-image" src="images/loader.svg">
+    </div>
+  </div>
+
+  <div class="row" ng-if="$ctrl.showLoading">
+    <div class="col-md-6 col-md-offset-4">
+      <span class="loading-text">Loading latest products...</span>
+    </div>
+  </div>
+</div>

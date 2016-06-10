@@ -1,0 +1,14 @@
+<loading
+  ng-if="!$ctrl.products"
+  load-data="$ctrl.loadProducts()"
+  show-loading="$ctrl.showLoading">
+</loading>
+
+<div class="row" ng-if="$ctrl.products">
+  <div class="book col-md-2" ng-repeat="product in $ctrl.products track by product.id">
+    <product
+      data="product"
+      add-cart="$ctrl.addToCart(product)">
+    </product>
+  </div>
+</div>

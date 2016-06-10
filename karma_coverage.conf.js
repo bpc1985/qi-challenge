@@ -13,13 +13,7 @@ module.exports = function(config) {
     files: [
       'app/bower_components/jquery/jquery.js',
       'app/bower_components/modernizr/modernizr.js',
-      'app/bower_components/lodash/dist/lodash.js',
-      'app/bower_components/momentjs/moment.js',
       '.tmp/scripts/app_coverage.js',
-      'app/bower_components/angular-modal/modal.js',
-      'app/vendor/angularjs-datetime-picker.js',
-      'app/vendor/ngNotificationsBar.js',
-      'app/vendor/oi-select.js',
       '.tmp/test/tests.js'
     ],
 

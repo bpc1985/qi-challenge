@@ -4,7 +4,6 @@ angular.module('qentinelShoppingCart', [
   require('angular-animate'),
   require('angular-sanitize'),
   require('angular-route'),
-  require('./main').name,
   require('./guide').name,
   require('./products').name,
   require('./cart').name
@@ -15,9 +14,7 @@ angular.module('qentinelShoppingCart', [
 
   $routeProvider
     .when('/', {
-      templateUrl: 'views/main.html',
-      controller: 'MainCtrl',
-      controllerAs: 'ctrl'
+      templateUrl: 'app.html'
     });
 })
 .run(require('./templates'));

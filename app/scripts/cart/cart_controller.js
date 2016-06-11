@@ -1,4 +1,5 @@
 var isEmpty = require('lodash/isempty');
+var fs = require('fs');
 
 module.exports = function(ModalService, ShoppingCart) {
   'ngInject';
@@ -16,8 +17,8 @@ module.exports = function(ModalService, ShoppingCart) {
   $ctrl.placeOrder = function() {
     if(!$ctrl.isEmpty()) {
       ModalService.showModal({
-        templateUrl: 'views/modal.html',
-        controller: 'ModalCtrl'
+        templateUrl: 'modal/modal.html',
+        controller: 'modalCtrl'
       }).then(function(modal) {
         modal.element.modal();
         modal.close.then(function(result) {

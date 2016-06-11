@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "dependencies": {
     "jquery": "2.0.3",
-    "normalize-css": "4.1.1",
     "bootstrap": "3.3.6",
     "modernizr": "2.8.3",
     "angular-modal-service": "0.9.10"

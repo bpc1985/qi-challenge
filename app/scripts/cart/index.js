@@ -4,4 +4,5 @@ module.exports = angular.module('cart', [
 ])
   .factory('ShoppingCart', require('./shopping_cart_factory'))
   .component('cart', require('./cart_component'))
-  .controller('cartCtrl', require('./cart_controller'));
+  .controller('cartCtrl', require('./cart_controller'))
+  .controller('modalCtrl', require('./modal/modal_controller'));

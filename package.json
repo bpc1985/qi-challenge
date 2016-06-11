@@ -73,7 +73,6 @@
   "scripts": {
     "start": "gulp server",
     "build": "gulp build",
-    "test": "gulp test",
-    "postinstall": "bower install"
+    "test": "gulp test"
   }
 }

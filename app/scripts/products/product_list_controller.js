@@ -1,4 +1,4 @@
-module.exports = function($http, $timeout, ShoppingCart) {
+module.exports = function($http, $timeout, ShoppingCart, TIME_INTERVAL) {
   'ngInject';
 
   var $ctrl = this;
@@ -12,7 +12,7 @@ module.exports = function($http, $timeout, ShoppingCart) {
           $ctrl.products = data.products;
           $ctrl.showLoading = false;
         });
-      }, 2000);
+      }, TIME_INTERVAL);
     }
   }
 
